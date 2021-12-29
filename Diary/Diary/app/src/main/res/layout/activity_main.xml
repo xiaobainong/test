@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id = "@+id/textview_author"
+        android:layout_width = "match_parent"
+        android:layout_height ="50dp"
+        android:gravity="center">
+    </TextView>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <Button
+        android:id="@+id/add_diary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="添加日记"
+        style="?android:attr/buttonStyle"/>
+    <Button
+        android:id="@+id/delete_diary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="删除日记"
+        style="?android:attr/buttonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>
