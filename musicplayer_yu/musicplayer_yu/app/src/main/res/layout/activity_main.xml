@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/showAllList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部歌曲"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:id="@+id/showMyList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="我的歌单"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:id="@+id/manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:text="管理"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/musicList"
+        android:layout_height="540dp"
+        android:layout_width="wrap_content"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/nowProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_weight="1">
+        </TextView>
+        <TextView
+            android:id="@+id/nowMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="1"
+            android:layout_weight="1"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:id="@+id/allProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_weight="1"
+            android:gravity="right">
+        </TextView>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/mSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <Spinner
+            android:id="@+id/mode"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:id="@+id/last"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Last"/>
+
+        <Button
+            android:id="@+id/play_stop"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Play/Pause"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Next"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
